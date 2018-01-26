@@ -111,4 +111,12 @@ puts "C'est parti !"
 puts "_____________"
 puts " "
 
+
 my_game = Game.new.processing_game
+puts "T'en veux encore ? (yes/no)"
+answer = gets.chomp
+if answer == "yes"
+	new_game = Game.new.processing_game
+end
+
+puts "La c'est vraiment fini dude"
